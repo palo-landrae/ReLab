@@ -1,0 +1,29 @@
+{{title}}
+<!--Centriamo la mappa alle nostre coordinate-->
+<google-map [center]="center">
+  <!--Mettiamo un marker alle nostre coordinate-->
+  <map-marker [position]="position" [label]="label" [title]="title">
+  </map-marker>
+
+  <map-circle [center]="position" [radius]="50" [options]='circleOptions'>
+  </map-circle>
+
+  <map-circle [center]="position2" [radius]="50" [options]='circleOptions'>
+  </map-circle>
+
+
+  <map-marker [position]="position" [label]="label" [title]="title" [options]="markerOptions">
+  </map-marker>
+
+  <map-marker [position]="position2" [title]="title" [options]="markerOptions2">
+  </map-marker>
+
+  <map-polygon [paths]="vertices">
+  </map-polygon>
+
+  <map-polygon [paths]="vertices2" [options]='rectangleOptions'>
+  </map-polygon>
+  
+  <button  (click)="cambiaColore()">Cerchio</button>
+  <button  (click)="cambiaColoreRettangolo()">Rettangolo</button>
+</google-map>

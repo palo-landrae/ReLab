@@ -1,0 +1,12 @@
+Data la seguente immagine prova a rappresentare in Json la mucca e il coccodrillo
+
+animali_vertebrati: {
+    "classe" : "mammifero",
+    "descrizione" : ["il nome mammifero: per la presenza nelle femmine di ghiandole mammarie (produzione di latte)",
+    "sono vivipari", "hanno sangue caldo"],
+    "habitat" : {
+        "terra" : ["uomo", "cane", "mucca"],
+        "acqua" : ["balena", "delfino"],
+        "aria" : ["pipistrello"]
+    }
+}
