@@ -11,7 +11,7 @@ app = Flask(__name__)
 # Strinfa di connessione al DB
 app.config[
     "MONGO_URI"
-] = "** INSERT MONGO URL **"
+] = "mongodb+srv://<user>:<password>@cluster0.b47u5.mongodb.net/Relab?retryWrites=true&w=majority"
 
 mongo = PyMongo(app)
 # Per rispondere alle chiamate cross origin
